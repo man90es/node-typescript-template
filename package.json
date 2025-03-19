@@ -1,7 +1,7 @@
 {
 	"main": "src/index.ts",
 	"scripts": {
-		"postinstall": "cp -nv .env.template .env",
+		"postinstall": "cp -nv .env.template .env || true",
 		"dev": "ts-node-dev --env-file .env src/index.ts",
 		"build": "tsc",
 		"start": "node --env-file .env ./dist/index.js"
