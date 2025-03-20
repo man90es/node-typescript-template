@@ -1,8 +1,8 @@
 {
 	"compilerOptions": {
 		/* Basic Options */
-		"target": "es2015",
-		"module": "commonjs",
+		"target": "ESNext",
+		"module": "node16",
 		"allowJs": false,
 		"outDir": "dist",
 
@@ -23,7 +23,7 @@
 		"noFallthroughCasesInSwitch": true,
 
 		/* Module Resolution Options */
-		"moduleResolution": "node",
+		"moduleResolution": "node16",
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
 
