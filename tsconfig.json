@@ -4,8 +4,8 @@
 		"target": "ESNext",
 		"module": "node16",
 		"allowJs": false,
+		"rootDir": "./src",
 		"outDir": "dist",
-
 		/* Strict Type-Checking Options */
 		"strict": true,
 		"noImplicitAny": true,
@@ -15,18 +15,15 @@
 		"strictPropertyInitialization": true,
 		"noImplicitThis": true,
 		"alwaysStrict": true,
-
 		/* Additional Checks */
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
-
 		/* Module Resolution Options */
 		"moduleResolution": "node16",
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
-
 		/* Advanced Options */
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true
