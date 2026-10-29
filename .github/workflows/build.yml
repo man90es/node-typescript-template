@@ -11,15 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20]
+        node-version: [26]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v4
+        uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
         with:
-          version: 9
+          version: 11
+          cache: true
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
@@ -30,7 +31,7 @@ jobs:
         env:
           NODE_ENV: ${{vars.NODE_ENV}}
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: dist
           path: dist
